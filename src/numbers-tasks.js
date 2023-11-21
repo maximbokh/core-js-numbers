@@ -206,7 +206,7 @@ function roundToPowerOfTen(num, pow) {
  *   17 => true
  */
 function isPrime(n) {
-  for (let i = 2; i <= Math.sqrt(n); i + 1) {
+  for (let i = 2; i <= Math.sqrt(n); i += 1) {
     if (n % i === 0) {
       return false;
     }
@@ -280,7 +280,7 @@ function getFibonacciNumber(/* index */) {
 function getSumToN(n) {
   let sum = 0;
 
-  for (let i = 0; i <= n; i + 1) {
+  for (let i = 0; i <= n; i += 1) {
     sum += i;
   }
 
@@ -301,7 +301,7 @@ function getSumToN(n) {
 function getSumOfDigits(num) {
   const str = String(num);
   let sum = 0;
-  for (let i = 0; i < str.length; i + 1) {
+  for (let i = 0; i < str.length; i += 1) {
     sum += +str[i];
   }
 
